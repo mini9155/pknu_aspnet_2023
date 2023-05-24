@@ -8,21 +8,21 @@
     <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script> -->
     <style>
-        #container{
-            width:500px; height: 300px;
+        #container {
+            width: 500px; height: 300px;
             border: solid 1px black;
-            position: absolute;
+            position: relative;
         }
 
-        .circle{
+        .circle {
             position: absolute;
             width: 100px; height: 100px;
             border: solid 1px black;
             border-radius: 50%;
         }
 
-        #red{
-            left: 10px; top: 10px;
+        #red {
+            left: 10px; top : 10px;
             background-color: red;
         }
 
@@ -41,31 +41,31 @@
             background-color: yellow;
         }
 
-        .top_bar{
+        .top_bar {
             background-color: aqua;
-            position:fixed;
+            position: fixed;
             left: 0; top: 0; right: 0;
             height: 50px;
         }
 
-        .left_bar{
+        .left_bar {
             background-color: blueviolet;
-            position:fixed;
-            left: 0; top: 50px; right: 0;
+            position: fixed;
+            left: 0; top: 50px; bottom: 0;
             width: 50px;
-            z-index: 10; /* 모니터하면을 z출으로 여러 레이어를 겹칠때ㅔ*/
+            z-index: 10; /* 모니터화면을 z축으로 여러 레이어를 겹칠때 */
         }
     </style>
 </head>
 <body>
     <div class="top_bar"></div>
     <div class="left_bar"></div>
-    <h1> Dummy Title</h1>
+    <h1>Dummy Title</h1>
     <div id="container">
         <div id="red" class="circle"></div>
         <div id="green" class="circle"></div>
         <div id="blue" class="circle"></div>
-        <div id="yello" class="circle"></div>
+        <div id="yellow" class="circle"></div>
     </div>
     <h1>Dummy Title</h1>
 </body>

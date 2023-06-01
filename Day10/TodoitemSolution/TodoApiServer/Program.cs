@@ -4,6 +4,8 @@ using TodoApiServer.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddCors();
+
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(
 builder.Configuration.GetConnectionString("DefaultConnection"), 
 ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
@@ -25,6 +27,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCors(Options => Options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
 app.MapControllers();
 

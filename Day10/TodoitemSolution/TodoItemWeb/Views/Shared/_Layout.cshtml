@@ -45,18 +45,22 @@
             $('#btnInsert').click(function (event) {
                 event.preventDefault(); // 폼 제출방지
 
+                var curDate = new Date();
+                var dateStr = curDate.getFullYear() + '-' + (curDate.getMonth() + 1) + '-' + curDate.getDate() + ' '
+                    + curDate.getHours() + ':' + curDate.getMinutes() + ':' + curDate.getSeconds();
+
                 var data = {
                     'id':0,
                     "title":$('#Title').val(),
-                    "todoDate":"2023-06-01T02:48:58.940Z",
-                    "isComplete" : $('#IsComplete option:selected').val()
+                    "todoDate":"dataStr",
+                    "isComplete": $('#IsComplete option:selected').val()
                 };
 
                 console.log(data);
                 $.ajax('https://localhost:7293/api/TodoItems/',{
                     type:'POST',
                     data:JSON.stringify(data),
-                    contentType : 'application/Json',
+                    contentType : 'application/json',
                     success: (data) => {
                         if(typeof(data) == 'object') {
                             data = JSON.stringify(data);
@@ -67,6 +71,9 @@
                         if(id !=0){
                             $('#result').text('한 건 추가되었습니다');
                         }
+                    },
+                    error: function(request, status, error) {
+                        console.log(error);
                     }
                 })
              });

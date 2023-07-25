@@ -23,27 +23,22 @@ ASP.NET 학습 리포지토리
 	
 Bootstrap 앨범사이트 클로닝
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet01.gif" width="700">
+
 
 핀터레스트스타일 페이지 클로닝
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet02.gif" width="700">
 
-## 4일차
 - ASP.NET Core MVC
 	- ASP.NET 기본
 	- ASP.NET 프로젝트
 
 ASP.NET Core MVC 게시판
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet03.png" width="700">
 
-## 5일차
 - ASP.NET MVC
 	- 게시판 페이징
 		- Trumbwyg 에디터
 	
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet04.gif" width="700">
 	
 ## 6일차
 - ASP.NET Core MVC
@@ -52,7 +47,7 @@ ASP.NET Core MVC 게시판
 		- 회원가입
 		- 로그인
 	
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet05.gif" width="700">
+
 
 ## 7일차
 - ASP.NET Core MVC
@@ -69,7 +64,6 @@ ASP.NET Core MVC 게시판
 - ASP.NET Core MVC
 	- 부트스트랩 테마(SEO Dream) 적용
 	
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet06.gif" width="700">
 
 ## 9일차
 - ASP.NET Core MVC
@@ -81,12 +75,9 @@ ASP.NET Core MVC 게시판
 
 SEO Theme 완료
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet07.gif" width="700">	
 
 다른 테마 적용
 
-<img src="https://raw.githubusercontent.com/hugoMGSung/pknu_aspnet_2023/main/images/aspnet08.gif" width="700">	
-	
 ## 10일차
 - ASP.NET RestAPI
 	- OpenAPI같은 서비스를 운영
